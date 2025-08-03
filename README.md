@@ -31,7 +31,7 @@ backend> SELECT * FROM buzz;
    $ PG_INCLUDE_DIR=<your Postgres include dir> cargo b -r
 
    # If you want to use pg_config
-   $ PG_INCLUDE_DIR=$(pg_config --includedir);
+   $ PG_INCLUDE_DIR=$(pg_config --includedir) cargo b -r
    ```
 
    Then you will get 2 archive files under `target/release`:
