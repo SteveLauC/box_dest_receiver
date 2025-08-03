@@ -1,7 +1,7 @@
 # box_dest_receiver
 
-A [DestReceiver](dr) implementation that renders query results in a box 
-format, inspired by DuckDB's box renderer. It is meant to be used under
+A Postgres [DestReceiver](dr) implementation that renders query results in 
+a box format, inspired by DuckDB's box renderer.  It is meant to be used under
 the single-user mode as it writes to stdout.
 
 
