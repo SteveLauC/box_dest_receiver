@@ -21,6 +21,16 @@ backend> SELECT * FROM buzz;
 └─────────────────────┴────────────┘
 ```
 
+
+## Why build this thing
+
+Yeah, I know that single-user mode is primarily for debugging, such a tool does 
+not make too much sense.  But right now, that's my main way of running Postgres.
+I hack the source code, build it, run it with the `--single` option to test my 
+patch, then keep hacking.  Given this niche workflow, the default `DestReceiver`
+is a big no-no for me.
+
+
 ## How to use it
 
 1. Build the project, we need to know the location of Postgres include directory.  It is
